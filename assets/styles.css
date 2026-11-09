@@ -67,6 +67,14 @@ body{background:#fff;color:#191a20}
 @media(max-width:700px){.nav-shell{height:72px}.brand{min-width:0;gap:7px}.brand-mark{width:42px;height:42px}.brand-letters b{font-size:21px}.brand-letters small{font-size:7px}.hero-main-image{border-radius:85px 0 0 0}}
 
 .official-logo{display:block;width:187px;max-width:100%}.official-logo img{width:100%;height:auto;object-fit:contain}.admin-header{background:#0a0a0d;border-bottom:1px solid #302d31}.admin-header .brand{color:#fff}
+/* EVACON - Hero Image Fix */
+
 .hero-main-image img {
-  filter: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    object-fit: cover;
+}
+
+.hero-main-image .hero-image-shade {
+    display: none !important;
 }
