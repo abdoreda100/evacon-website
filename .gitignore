@@ -1,0 +1,17 @@
+# Private customer leads
+/data/leads.json
+/data/.leads-*.tmp
+.env
+node_modules/
+_preview.html
+
+# Local settings and private files
+*.log
+/data/*.tmp
+/data/leads*.json
+
+# CMS content, uploads and private leads (Railway volume)
+/data/cms.json
+/data/media/
+/data/.cms-*.tmp
+/uploads/

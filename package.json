@@ -1,9 +1,14 @@
 {
   "name": "evacon-real-estate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "RTL real estate brokerage website with property listings, lead form and protected dashboard",
-  "scripts": {"start": "node server.mjs", "check": "node --check server.mjs && node --check assets/app.js"},
-  "engines": {"node": ">=20"}
+  "description": "EVACON Arabic real estate brokerage website with protected property/content CMS and leads dashboard",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check cms.mjs && node --check assets/app.js && node --check assets/admin-cms.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }

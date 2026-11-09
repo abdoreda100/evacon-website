@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0b0e">
   <meta name="description" content="إيفاكون وسيط عقاري يساعدك تستكشف وحدات متنوعة وتختار ما يناسب احتياجاتك. استعرض العقارات والأسعار الاسترشادية واطلب التواصل مع مستشار.">
-  <meta name="robots" content="noindex,follow">
+  <meta name="robots" content="{{ROBOTS}}">
   <meta property="og:title" content="إيفاكون | ابتكر، اصنع الفرق في اختيار عقارك">
   <meta property="og:description" content="EVACON للوساطة العقارية — تعرّف على رؤيتنا وخدماتنا واستعرض الوحدات واطلب التواصل.">
   <title>إيفاكون العقارية | ابتكر، اصنع الفرق في اختيار عقارك</title>
   <link rel="icon" href="/assets/evacon-favicon.png" type="image/png">
   <link rel="stylesheet" href="/assets/styles.css">
+  {{FONT_CSS}}
   <script defer src="/assets/app.js"></script>
 </head>
 <body>
-  <div class="demo-bar">نسخة تجريبية — الوحدات والأسعار والصور توضيحية، وليست عروض بيع فعلية</div>
+  {{DEMO_BAR}}
   <header class="site-header" id="site-header">
     <div class="container nav-shell">
       <a href="/" class="brand" aria-label="إيفاكون — الرئيسية"><span class="brand-mark"><img src="/assets/evacon-mark.png" alt="" width="52" height="52"></span><span class="brand-letters"><b>EVACON</b><small>إيفاكون • REAL ESTATE BROKERAGE</small></span></a>
       <nav class="desktop-nav" aria-label="القائمة الرئيسية">
-        <a href="#about">عن إيفاكون</a><a href="#properties">الوحدات</a><a href="#why">ليه إيفاكون؟</a><a href="#how">خطواتك معانا</a><a href="#contact">تواصل معنا</a>
+        <a href="#about">عن إيفاكون</a><a href="#properties">الوحدات</a><a href="#why">ليه إيفاكون؟</a><a href="#how">خطواتك معانا</a><a href="#contact">تواصل معنا</a>{{SOCIAL_LINKS}}
       </nav>
       <a href="#contact" class="nav-cta">ابدأ رحلتك <svg class="i"><use href="/assets/icons.svg#arrow"></use></svg></a>
       <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
     </div>
-    <nav class="mobile-nav" aria-label="قائمة الهاتف"><a href="#about">عن إيفاكون</a><a href="#properties">الوحدات</a><a href="#why">ليه إيفاكون؟</a><a href="#how">خطواتك معانا</a><a href="#contact">تواصل معنا</a></nav>
+    <nav class="mobile-nav" aria-label="قائمة الهاتف"><a href="#about">عن إيفاكون</a><a href="#properties">الوحدات</a><a href="#why">ليه إيفاكون؟</a><a href="#how">خطواتك معانا</a><a href="#contact">تواصل معنا</a>{{SOCIAL_LINKS}}</nav>
   </header>
 
   <main>
@@ -33,13 +34,13 @@
       <div class="container hero-inner">
         <div class="hero-copy">
           <div class="hero-pill"><span class="live-dot"></span> EVACON | وسيطك العقاري لقرار أوضح <span class="pill-line"></span> WE INNOVATE TO MAKE A DIFFERENCE</div>
-          <h1 id="hero-title">مش مجرد وحدة.<br><span class="accent-title">قرار يصنع الفرق.</span></h1>
-          <p>في EVACON بنجمع بين فهم احتياجك وسهولة الوصول للوحدات المناسبة. شركاؤك في البحث والمقارنة وترتيب المعاينات علشان تختار بوضوح وثقة.</p>
+          <h1 id="hero-title">{{HERO_TOP}}<br><span class="accent-title">{{HERO_ACCENT}}</span></h1>
+          <p>{{HERO_DESCRIPTION}}</p>
           <div class="hero-actions"><a href="#properties" class="btn btn-gold">اكتشف الوحدات <svg class="i"><use href="/assets/icons.svg#arrow"></use></svg></a><a href="#about" class="btn btn-ghost">اعرف إيفاكون <svg class="i"><use href="/assets/icons.svg#play"></use></svg></a></div>
           <div class="hero-trust"><span class="trust-line"></span><p>نسمع احتياجك · نرشح الأنسب · نتابع معاك</p></div>
         </div>
         <div class="hero-visual">
-          <div class="hero-main-image"><img src="/assets/hero-home.jpg" alt="تصميم معماري توضيحي لمسكن عصري" width="1000" height="1000"><div class="hero-image-shade"></div></div>
+          <div class="hero-main-image"><img src="{{HERO_IMAGE}}" alt="صورة واجهة EVACON العقارية" width="1000" height="1000"><div class="hero-image-shade"></div></div>
           <div class="visual-label"><span>01 / DISCOVER</span><b>مكان يليق<br>بخطوتك الجاية.</b></div>
           <div class="floating-asset"><span class="float-icon"><svg class="i"><use href="/assets/icons.svg#spark"></use></svg></span><span><small>خلّينا نبدأ صح</small><strong>اختيارات تناسبك إنت</strong></span></div>
           <div class="visual-edge">REAL ESTATE. REAL CLARITY.</div>
@@ -51,8 +52,8 @@
     <section class="search-wrap container" aria-label="ابحث عن عقارك">
       <form id="search-form" class="search-card">
         <div class="search-lead"><span class="search-icon"><svg class="i"><use href="/assets/icons.svg#search"></use></svg></span><span><strong>دور على اللي يناسبك</strong><small>كل اختيار بيبدأ بخطوة</small></span></div>
-        <label class="search-field"><span>الموقع</span><select id="search-location"><option value="all">كل المناطق</option><option>التجمع الخامس</option><option>الشيخ زايد</option><option>العاصمة الإدارية</option><option>الساحل الشمالي</option><option>6 أكتوبر</option></select></label>
-        <label class="search-field"><span>نوع الوحدة</span><select id="search-type"><option value="all">كل الأنواع</option><option>شقة</option><option>فيلا</option><option>شاليه</option><option>دوبلكس</option><option>استوديو</option></select></label>
+        <label class="search-field"><span>الموقع</span><select id="search-location"><option value="all">كل المناطق</option>{{LOCATION_OPTIONS}}</select></label>
+        <label class="search-field"><span>نوع الوحدة</span><select id="search-type"><option value="all">كل الأنواع</option>{{TYPE_OPTIONS}}</select></label>
         <label class="search-field"><span>الميزانية القصوى</span><select id="search-budget"><option value="0">أي ميزانية</option><option value="3000000">حتى 3 مليون جنيه</option><option value="5000000">حتى 5 مليون جنيه</option><option value="8000000">حتى 8 مليون جنيه</option><option value="20000000">حتى 20 مليون جنيه</option></select></label>
         <button type="submit" class="search-submit">ابحث الآن <svg class="i"><use href="/assets/icons.svg#arrow"></use></svg></button>
       </form>
@@ -61,8 +62,8 @@
     <section class="section intro-section" id="about">
       <div class="container intro-layout">
         <div class="intro-visual"><div class="intro-visual-main"><img src="/assets/property-2.svg" alt="تصور توضيحي لوحدة سكنية" loading="lazy"></div><div class="intro-stamp"><span>OUR APPROACH</span><strong>01</strong><span>LISTEN · MATCH · GUIDE</span></div></div>
-        <div class="intro-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> عن إيفاكون / ABOUT US</div><h2>أكتر من مجرد وسيط.<br><span>شريك في قرارك.</span></h2><p class="big-intro">إيفاكون نموذج لشركة <strong>وساطة عقارية (Real Estate Brokerage)</strong> بتربط العميل بالاختيارات المناسبة من الوحدات، وبتساعده في رحلة البحث والمقارنة والتواصل والمتابعة.</p><p>دورنا إننا نفهم أولوياتك قبل ما نرشحلك أي عقار. سواء بتدور على بيت للعيلة، مكان جديد، أو فرصة استثمارية محتملة، هدفنا نقدملك معلومات أوضح وتجربة أسهل.</p>
-          <div class="mission-grid"><div><span class="mini-icon"><svg class="i"><use href="/assets/icons.svg#compass"></use></svg></span><h3>رؤيتنا</h3><p>أن نُحدث فرقًا في سوق الوساطة العقارية بتجربة أسهل، وخيارات أوضح، وقرارات مبنية على معرفة.</p></div><div><span class="mini-icon"><svg class="i"><use href="/assets/icons.svg#target"></use></svg></span><h3>رسالتنا</h3><p>نربط العملاء بالفرص العقارية المناسبة، ونوفّر لهم معلومات منظمة ومتابعة شخصية طوال رحلة الاختيار.</p></div></div><div class="goal-note"><strong>هدفنا الأساسي</strong><p>نوصل كل عميل لاختيارات واقعية مناسبة لاحتياجاته وميزانيته، ونساعده يفهم التفاصيل قبل اتخاذ القرار.</p></div>
+        <div class="intro-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> عن إيفاكون / ABOUT US</div><h2>أكتر من مجرد وسيط.<br><span>شريك في قرارك.</span></h2><p class="big-intro">{{ABOUT}}</p><p>{{ABOUT_SECONDARY}}</p>
+          <div class="mission-grid"><div><span class="mini-icon"><svg class="i"><use href="/assets/icons.svg#compass"></use></svg></span><h3>رؤيتنا</h3><p>{{VISION}}</p></div><div><span class="mini-icon"><svg class="i"><use href="/assets/icons.svg#target"></use></svg></span><h3>رسالتنا</h3><p>{{MISSION}}</p></div></div><div class="goal-note"><strong>هدفنا الأساسي</strong><p>{{GOAL}}</p></div>
         </div>
       </div>
     </section>
@@ -70,10 +71,10 @@
     <section class="section property-section" id="properties">
       <div class="container">
         <div class="section-head"><div><div class="eyebrow dark"><span class="eyebrow-dot"></span> العقارات / OUR COLLECTION</div><h2>أماكن تستحق <span>تكتشفها.</span></h2><p>وحدات متنوعة تقدر تتصفحها وتقارن بينها على راحتك.</p></div><div class="section-side-tag">CURATED SPACES <span>✳</span></div></div>
-        <div class="property-tools"><div class="filter-chips" role="group" aria-label="تصفية حسب نوع الوحدة"><button type="button" class="filter-chip active" data-type-filter="all">كل الوحدات</button><button type="button" class="filter-chip" data-type-filter="شقة">شقق</button><button type="button" class="filter-chip" data-type-filter="فيلا">فيلات</button><button type="button" class="filter-chip" data-type-filter="شاليه">شاليهات</button><button type="button" class="filter-chip" data-type-filter="دوبلكس">دوبلكس</button></div><span id="result-count" class="results-text" aria-live="polite">6 وحدات متاحة للعرض</span></div>
+        <div class="property-tools"><div class="filter-chips" role="group" aria-label="تصفية حسب نوع الوحدة"><button type="button" class="filter-chip active" data-type-filter="all">كل الوحدات</button>{{FILTER_CHIPS}}</div><span id="result-count" class="results-text" aria-live="polite">6 وحدات متاحة للعرض</span></div>
         <div class="property-grid" id="property-grid">{{PROPERTY_CARDS}}</div>
         <div class="empty-state" id="empty-state" hidden><div>⌕</div><h3>ملقيناش وحدات بنفس المواصفات</h3><p>جرّب تغيّر المنطقة أو نوع الوحدة أو الميزانية.</p><button type="button" id="reset-filters" class="btn btn-dark">اعرض كل الوحدات</button></div>
-        <p class="disclaimer">* جميع الوحدات والصور والأسعار الحالية داخل النموذج بيانات افتراضية للاستعراض، ويجب استبدالها بالمخزون الحقيقي قبل نشر الموقع.</p>
+        {{DISCLAIMER}}
       </div>
     </section>
 
@@ -87,7 +88,7 @@
         <div class="field-group"><label for="lead-name">الاسم بالكامل <span>*</span></label><input id="lead-name" name="name" placeholder="اكتب اسمك" required minlength="2" maxlength="90" autocomplete="name"></div>
         <div class="field-group"><label for="lead-phone">رقم الموبايل <span>*</span></label><input id="lead-phone" name="phone" type="tel" placeholder="01xxxxxxxxx" required maxlength="22" autocomplete="tel" inputmode="tel" dir="ltr"></div>
         <div class="form-row"><div class="field-group"><label for="lead-intent">إنت بتدور على</label><select id="lead-intent" name="intent"><option value="شراء للسكن">شراء للسكن</option><option value="استثمار">فرصة استثمار</option><option value="استفسار عام">استفسار عام</option></select></div><div class="field-group"><label for="lead-budget">ميزانيتك التقريبية</label><select id="lead-budget" name="budget"><option value="لم أحدد بعد">لسه محددتش</option><option value="أقل من 3 مليون">أقل من 3 مليون</option><option value="3 إلى 5 مليون">3–5 مليون</option><option value="5 إلى 10 مليون">5–10 مليون</option><option value="أكثر من 10 مليون">أكثر من 10 مليون</option></select></div></div>
-        <div class="form-row"><div class="field-group"><label for="lead-location">المنطقة المفضلة</label><select id="lead-location" name="location"><option value="لم أحدد بعد">لسه محددتش</option><option>التجمع الخامس</option><option>الشيخ زايد</option><option>العاصمة الإدارية</option><option>الساحل الشمالي</option><option>6 أكتوبر</option><option>منطقة أخرى</option></select></div><div class="field-group"><label for="lead-timeline">إمتى ناوي تبدأ؟</label><select id="lead-timeline" name="timeline"><option value="غير محدد">مش محدد</option><option value="خلال شهر">خلال شهر</option><option value="1 إلى 3 شهور">1–3 شهور</option><option value="3 إلى 6 شهور">3–6 شهور</option><option value="بعد 6 شهور">بعد 6 شهور</option></select></div></div>
+        <div class="form-row"><div class="field-group"><label for="lead-location">المنطقة المفضلة</label><select id="lead-location" name="location"><option value="لم أحدد بعد">لسه محددتش</option>{{LOCATION_OPTIONS}}<option>منطقة أخرى</option></select></div><div class="field-group"><label for="lead-timeline">إمتى ناوي تبدأ؟</label><select id="lead-timeline" name="timeline"><option value="غير محدد">مش محدد</option><option value="خلال شهر">خلال شهر</option><option value="1 إلى 3 شهور">1–3 شهور</option><option value="3 إلى 6 شهور">3–6 شهور</option><option value="بعد 6 شهور">بعد 6 شهور</option></select></div></div>
         <div class="field-group"><label for="lead-visit">معاد المعاينة المفضل (اختياري)</label><input id="lead-visit" name="visitDate" type="date"></div>
         <div class="field-group"><label for="lead-property">الوحدة اللي مهتم بيها (اختياري)</label><select id="lead-property" name="propertyId"><option value="">لسه باختار</option>{{PROPERTY_OPTIONS}}</select></div>
         <div class="field-group"><label for="lead-message">تفاصيل إضافية (اختياري)</label><textarea id="lead-message" name="message" rows="3" maxlength="1000" placeholder="المنطقة المفضلة، المساحة، أو أي تفاصيل تهمك..."></textarea></div>
@@ -99,5 +100,5 @@
 
     <section class="section faq-section"><div class="container faq-layout"><div><div class="eyebrow dark"><span class="eyebrow-dot"></span> FAQ</div><h2>أسئلة ممكن<br><span>تكون في بالك.</span></h2><p>بنحب كل خطوة تكون واضحة من البداية.</p></div><div class="faq-list"><details><summary>هل إيفاكون مطوّر عقاري ولا شركة وساطة؟<span>+</span></summary><p>إيفاكون في النموذج ده شركة وساطة عقارية (Brokerage)، بتساعد العميل يتعرف على العروض المتاحة ويتواصل بشأنها؛ مش مطوّر العقارات نفسه.</p></details><details><summary>هل الأسعار المعروضة نهائية؟<span>+</span></summary><p>لا. الأسعار الموجودة في النسخة التجريبية افتراضية تمامًا. عند استخدام الموقع الحقيقي لازم يتم استبدالها ببيانات موثقة ومحدثة مع توضيح شروط السداد.</p></details><details><summary>هل إرسال الطلب بيعتبر حجز للوحدة؟<span>+</span></summary><p>لا، ده طلب استفسار أو تواصل فقط، ومش بيترتب عليه حجز أو تعاقد أو التزام مالي.</p></details><details><summary>إيه اللي بيحصل بعد ما أبعت بياناتي؟<span>+</span></summary><p>بيتسجل الطلب في قاعدة بيانات الموقع، وممكن مسؤول الشركة يشوفه من لوحة الإدارة المحمية ويبدأ المتابعة.</p></details></div></div></section>
   </main>
-  <footer class="footer"><div class="container footer-grid"><div class="footer-about"><a href="/" class="official-logo" aria-label="EVACON | إيفاكون - الصفحة الرئيسية"><img src="/assets/evacon-logo.png" alt="إيفاكون EVACON - ابتكر، اصنع الفرق" width="230" height="247" loading="lazy"></a><p>ابتكر، اصنع الفرق. تجربة وساطة عقارية أقرب لتوقعاتك.</p><span class="foot-demo">EVACON • WE INNOVATE TO MAKE A DIFFERENCE</span></div><div><h3>اكتشف</h3><a href="#properties">كل الوحدات</a><a href="#about">عن الشركة</a><a href="#why">ليه إيفاكون؟</a></div><div><h3>معلومات</h3><a href="#how">طريقة العمل</a><a href="#contact">طلب استشارة</a><a href="/privacy.html">سياسة الخصوصية</a></div><div class="footer-signoff"><span>WE INNOVATE.</span><strong>TO MAKE A DIFFERENCE.</strong><p>المحتوى العقاري وأسعار الوحدات للعرض التجريبي فقط.</p></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> EVACON REAL ESTATE — نسخة تجريبية للوحدات</span><a href="#top">ارجع لفوق ↑</a></div></footer>
+  <footer class="footer"><div class="container footer-grid"><div class="footer-about"><a href="/" class="official-logo" aria-label="EVACON | إيفاكون - الصفحة الرئيسية"><img src="/assets/evacon-logo.png" alt="إيفاكون EVACON - ابتكر، اصنع الفرق" width="230" height="247" loading="lazy"></a><p>ابتكر، اصنع الفرق. تجربة وساطة عقارية أقرب لتوقعاتك.</p><span class="foot-demo">EVACON • WE INNOVATE TO MAKE A DIFFERENCE</span></div><div><h3>اكتشف</h3><a href="#properties">كل الوحدات</a><a href="#about">عن الشركة</a><a href="#why">ليه إيفاكون؟</a></div><div><h3>معلومات</h3><a href="#how">طريقة العمل</a><a href="#contact">طلب استشارة</a><a href="/privacy.html">سياسة الخصوصية</a>{{SOCIAL_LINKS}}</div><div class="footer-signoff"><span>WE INNOVATE.</span><strong>TO MAKE A DIFFERENCE.</strong><p>المحتوى العقاري وأسعار الوحدات للعرض التجريبي فقط.</p></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> EVACON REAL ESTATE — نسخة تجريبية للوحدات</span><a href="#top">ارجع لفوق ↑</a></div></footer>{{FLOATING_FACEBOOK}}
 </body></html>
