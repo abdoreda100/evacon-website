@@ -1,0 +1,17 @@
+[
+  {
+    "reference": "EV-20261109-664248",
+    "createdAt": "2026-11-09T02:02:23.683Z",
+    "name": "بابلو",
+    "phone": "01245745775",
+    "intent": "شراء للسكن",
+    "budget": "5 إلى 10 مليون",
+    "location": "التجمع الخامس",
+    "timeline": "خلال شهر",
+    "visitDate": null,
+    "propertyId": 1,
+    "message": "",
+    "source": "website",
+    "consent": true
+  }
+]

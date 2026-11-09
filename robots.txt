@@ -1,0 +1,3 @@
+# Demo: do not index illustrative listings until real company/property data replaces them.
+User-agent: *
+Disallow: /

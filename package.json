@@ -1,0 +1,9 @@
+{
+  "name": "evacon-real-estate",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "RTL real estate brokerage website with property listings, lead form and protected dashboard",
+  "scripts": {"start": "node server.mjs", "check": "node --check server.mjs && node --check assets/app.js"},
+  "engines": {"node": ">=20"}
+}
